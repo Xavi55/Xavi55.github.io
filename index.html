@@ -2,9 +2,88 @@
 <html>
 	<head>
 
-	<title>DEMO PAGE</title>
+	<title>KG Portfolio</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link></link>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<!--ICON-->
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--FONT-->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
 	</head>
 	<body>
-		<h1>Hello everyone!</h1>
+		<main>
+			<div class="navbar" id='bar'>
+				<a href="#home">Home</a>
+				<a href="#me">About Me</a>
+				<a href="#proj">Projects</a>
+				<a href="#contact">Contact</a>
+				
+				<a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick='nav()'>&#9776;</a>
+			</div>
+			
+			<div id ="home" class="page1">
+			<h1 style="padding: 90px 0 0 90px">Kevin Gamez</h1>
+			</div>
+			<div id="me" class="page2">
+				<h1>About Me:</h1>
+					<div id=title2>
+						<p>Hello, I'm an aspiring software engineer residing in Elizabeth, NJ <p>
+						<p>
+							I am currently studying for my baccalaureate in Computer Science at Rutgers University - Newark.
+							I have at least 3 years of programming experience within in a classroom setting and now I seek possible opportunities to further improve upon my programming skills.
+						</p>
+					</div>
+			</div>
+
+			<div id="proj" class="page3">
+			<h1>Projects:</h1>
+				<div class=content>
+
+					<div class=box>
+						<a href="https://xavi55.github.io/weatherApp/"><img src="images/dark.jpg"></a>
+						<div class=overlay><p class=caption>Weather app!</p></div>
+					</div>
+					<div class=box>
+						<a href='https://chatapp0.herokuapp.com'><img src="images/dark.jpg"></a>
+						<div class=overlay><p class=caption>python chat app!</p></div>
+					</div>
+					<div class=box>
+						<a href=''><img src="images/dark.jpg"></a>
+						<div class=overlay><p class=caption>Hello there!</p></div>
+					</div>
+					<div class=box>
+						<a href=''><img src="images/dark.jpg"></a>
+						<div class=overlay><p class=caption>Hello there!</p></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact" class="page4">
+			<h1>Contact Info</h1>
+			
+				<div>blah blah</div>
+				<div>
+					<i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+					<p>You can reach me at.</p>
+				</div>
+			</div>
+		</main>
 	</body>
+	<script>
+		function nav()
+		{
+			var x = document.getElementById('bar');
+			if(x.className==='navbar')
+				x.className+=' resp';
+			else
+				x.className='navbar';
+		}
+	</script>
+	
 </html>
