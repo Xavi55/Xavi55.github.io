@@ -28,50 +28,62 @@
 			</div>
 			
 			<div id ="home" class="page1">
-			<h1 style="padding: 90px 0 0 90px">Kevin Gamez</h1>
+				<h1 style="padding: 90px 0 0 90px">Kevin Gamez</h1>
+				<div style="margin-left:20%;">
+					<a href='https://github.com/Xavi55' target="_blank" style="color:white; left:20%;"><i class="fa fa-github fa-2x"></i></a>
+					<a href='#' style="color:white;"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href='#' style="color:white;"><i class="fa fa-twitter fa-2x"></i></a>
+				</div>
+				
 			</div>
-			<div id="me" class="page2">
-				<h1>About Me:</h1>
-					<div id=title2>
-						<p>Hello, I'm an aspiring software engineer residing in Elizabeth, NJ <p>
-						<p>
-							I am currently studying for my baccalaureate in Computer Science at Rutgers University - Newark.
-							I have at least 3 years of programming experience within in a classroom setting and now I seek possible opportunities to further improve upon my programming skills.
-						</p>
-					</div>
+				<div id="me" class="page2">
+					<h1>About Me:</h1>
+						<div id=title2>
+							<p>Hello, I'm an aspiring software engineer residing in Elizabeth, NJ <p>
+							<p>
+								I am currently studying for my baccalaureate in Computer Science at Rutgers University - Newark.
+								I have at least 3 years of programming experience within in a classroom setting and now I seek possible opportunities to further improve upon my programming skills.
+							</p>
+						</div>
 			</div>
 
 			<div id="proj" class="page3">
-			<h1>Projects:</h1>
-				<div class=content>
-
-					<div class=box>
-						<a href="https://xavi55.github.io/weatherApp/"><img src="images/dark.jpg"></a>
-						<div class=overlay><p class=caption>Weather app!</p></div>
+				<h1>Projects:</h1>
+					<div class=content>
+						<div class=box>
+							<a href="https://xavi55.github.io/weatherApp/"><img src="images/weather.png"></a>
+							<div class=overlay><p class=caption>A Weather app!</p></div>
+				  	</div>
+				  	
+						<div class=box>
+							<a href='https://chatapp0.herokuapp.com'><img src="images/chat.png"></a>
+							<div class=overlay><p class=caption>A chat app made with flask/sockets</p></div>
 					</div>
-					<div class=box>
-						<a href='https://chatapp0.herokuapp.com'><img src="images/dark.jpg"></a>
-						<div class=overlay><p class=caption>python chat app!</p></div>
+						<div class=box>
+							<a href='https://xavi55.github.io/carDemo/'><img src="images/car.png"></a>
+							<div class=overlay><p class=caption>A small website for IS117</p></div>
+						</div>
+						<div class=box>
+							<a href='#'><img src="images/dark.jpg"></a>
+							<div class=overlay><p class=caption>Hello there!</p></div>
+						</div>
 					</div>
-					<div class=box>
-						<a href=''><img src="images/dark.jpg"></a>
-						<div class=overlay><p class=caption>Hello there!</p></div>
-					</div>
-					<div class=box>
-						<a href=''><img src="images/dark.jpg"></a>
-						<div class=overlay><p class=caption>Hello there!</p></div>
-					</div>
-				</div>
 			</div>
 
 			<div id="contact" class="page4">
-			<h1>Contact Info</h1>
-			
-				<div>blah blah</div>
-				<div>
-					<i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
-					<p>You can reach me at.</p>
+				<h1>Contact Info</h1>
+				<div class=col2><h3 style=text-align:center>Call me at <br> Tel: 908-000-0000<br>kxg2@rutgers.edu</h3>
 				</div>
+				<div class=col2>
+					<h3 style=text-align:center>Or contact me below.<br><br></h3>
+					
+						  <form target="_blank" action="mailto:test@test.edu" method='post' enctype="text/plain">
+								<input id=name type=text placeholder=Subject name="subject">
+								<textarea id=body type=text placeholder=Content name="body" style=height:90px></textarea>
+								<input type='submit' value='submit' onclick="ok()">
+							</form>
+				</div>
+				
 			</div>
 		</main>
 	</body>
@@ -84,6 +96,13 @@
 			else
 				x.className='navbar';
 		}
+		
+		function ok()
+		{
+			alert("SENT");
+		}
+		
+		
 	</script>
 	
 </html>

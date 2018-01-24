@@ -9,6 +9,7 @@ main
 	top:0;
 	height:60px;
 	width: 100%;
+	z-index:2;
 }
 .navbar a
 {
@@ -71,24 +72,6 @@ h1
 	width:100%;
 }
 
-/******************/
-.overlay {
-  position: absolute;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-img:hover .overlay {
-  opacity: 1;
-}
-
-.caption
-{
-	color: white;
-	position: absolute;
-	top: 0%;
-	left: 0%;
-}
 .page3 .content
 {
 	padding:2em 0em 2em 4%;
@@ -97,30 +80,82 @@ img:hover .overlay {
 	display:block;
 	border:3px solid black;
 	border-radius:5px;
-
 	overflow:hidden;
 }
-.page3 img
-{
-	margin: 0em 4% 2em 4%;
-	border-radius:15px;
-	height:350px;
-	width:350px;
-	display:block;
 
-	float:left;
+
+/******************/
+.box {
+  position: relative;
+  width:80%;
+  margin: 1em 1em;
 }
+
+.box img{
+	height:auto;
+	width:100%;
+	margin:1em 1em;
+	border-radius:15px;
+}
+
+page3 img {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top:0 ;
+  left: 60%;
+  bottom:0;
+  right: 0;
+  height: 95%;
+  width: 45%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+  border-radius:15px;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.caption {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/******************/
 
 .page4
 {
 	margin-top:2em;
+	margin-left:auto;
+	margin-right:auto;
 	background-color:black;
 	color:white;
 	padding-top:35px;
+	overflow:auto;
 }
-.page4 div
+.col2
 {
-	padding:20px 20px 20px 20px;
+	float:left;
+	width:50%;
+}
+
+input, textarea
+{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 650px) 
@@ -153,4 +188,16 @@ img:hover .overlay {
     display: block;
     text-align: center;
   }
+  .page3 img
+  {
+  	height:auto;
+  	width:80%;
+  }
+  .col2
+  {
+  	float:none;
+		margin-left:auto;
+		margin-right:auto;
+  }
+  
 }
