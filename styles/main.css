@@ -74,7 +74,7 @@ h1
 
 .page3 .content
 {
-	padding:2em 0em 2em 4%;
+	padding:2em 0em 2em 0;
 	margin-left:5%;
 	margin-right:5%;
 	display:block;
@@ -89,6 +89,8 @@ h1
   position: relative;
   width:80%;
   margin: 1em 1em;
+  float:left;
+  width:42.5%;
 }
 
 .box img{
@@ -108,7 +110,7 @@ page3 img {
   left: 60%;
   bottom:0;
   right: 0;
-  height: 95%;
+  height: 101%;
   width: 45%;
   opacity: 0;
   transition: .5s ease;
@@ -173,7 +175,7 @@ input, textarea
 {
   .navbar.resp {
      position:fixed;
-     height:50%;
+     height:55%;
   }
   .navbar.resp .icon 
   {
@@ -188,10 +190,19 @@ input, textarea
     display: block;
     margin: 0 auto;
   }
+  .box
+  {
+  	width:auto;
+  	float:none;
+  }
   .page3 img
   {
   	height:auto;
-  	width:80%;
+  	width:88%;
+  }
+  .overlay
+  {
+  	
   }
   .col2
   {
