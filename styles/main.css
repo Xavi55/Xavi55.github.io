@@ -74,7 +74,7 @@ h1
 
 .page3 .content
 {
-	padding:2em 0em 2em 0;
+	padding:2em 2em 2em 2em;
 	margin-left:5%;
 	margin-right:5%;
 	display:block;
@@ -90,13 +90,12 @@ h1
   width:80%;
   margin: 1em 1em;
   float:left;
-  width:42.5%;
+  width:47.5%;
 }
 
 .box img{
 	height:auto;
 	width:100%;
-	margin:1em 1em;
 	border-radius:15px;
 }
 
@@ -107,11 +106,11 @@ page3 img {
 .overlay {
   position: absolute;
   top:0 ;
-  left: 60%;
+  left: 0%;
   bottom:0;
   right: 0;
-  height: 101%;
-  width: 45%;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #000;
@@ -119,10 +118,11 @@ page3 img {
 }
 
 .box:hover .overlay {
-  opacity: 1;
+  opacity: .8;
 }
 
-.caption {
+.caption a {
+	text-decoration:none;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -131,6 +131,7 @@ page3 img {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  width:100%;
 }
 /******************/
 
@@ -159,6 +160,15 @@ input, textarea
     box-sizing: border-box;
     margin-bottom: 16px;
 }
+@media screen and (max-width: 950px) 
+{
+	.box 
+	{
+		width:44.5%;
+	}
+
+}
+
 
 @media screen and (max-width: 650px) 
 {
@@ -200,6 +210,11 @@ input, textarea
   	height:auto;
   	width:88%;
   }
+  .caption a
+  {
+  	font-size:.5em;
+  }
+  
   .overlay
   {
   	
