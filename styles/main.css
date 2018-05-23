@@ -168,8 +168,7 @@ input, textarea
 	}
 
 }
-
-
+/*standard mobiles?*/
 @media screen and (max-width: 650px) 
 {
 	.navbar a {display: none;}
@@ -183,7 +182,9 @@ input, textarea
 
 @media screen and (max-width: 650px) 
 {
-  .navbar.resp {
+	/*resp portrait*/
+  .navbar.resp 
+  {
      position:fixed;
      height:55%;
   }
@@ -208,7 +209,7 @@ input, textarea
   .page3 img
   {
   	height:auto;
-  	width:88%;
+  	width:100%;
   }
   .caption a
   {
@@ -227,3 +228,12 @@ input, textarea
   }
   
 }
+/*resp landscape*/
+@media screen and (max-height: 360px)
+{
+	.navbar.resp 
+	{
+     position:fixed;
+     height:85%;
+  }
+} 
