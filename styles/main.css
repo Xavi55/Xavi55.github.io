@@ -30,14 +30,16 @@ main
 {
   display: none;
 }
-p
+#about
 {
 	font-size:1.2em;
+	font-weight:500;
 }
-h1
+h2
 {
 	/*padding-top:35px;*/
 	padding-left:35px;
+	font-size:2em;
 
 }
 .page1
@@ -90,7 +92,7 @@ h1
   width:80%;
   margin: 1em 1em;
   float:left;
-  width:47.5%;
+  width:45.5%;
 }
 
 .box img{
