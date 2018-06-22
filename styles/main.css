@@ -30,7 +30,7 @@ main
 {
   display: none;
 }
-#about
+.tex
 {
 	font-size:1.2em;
 	font-weight:500;
@@ -63,7 +63,7 @@ h2
 	background-color:#000;
 	padding-top:35px;
 }
-#title2
+.desc
 {
 	text-align:center;
 	padding: 0 30px 30px 30px;
@@ -89,10 +89,9 @@ h2
 /******************/
 .box {
   position: relative;
-  width:80%;
   margin: 1em 1em;
   float:left;
-  width:45.5%;
+  width:29.9%;
 }
 
 .box img{
@@ -188,7 +187,7 @@ input, textarea
   .navbar.resp 
   {
      position:fixed;
-     height:55%;
+     height:17em;
   }
   .navbar.resp .icon 
   {
