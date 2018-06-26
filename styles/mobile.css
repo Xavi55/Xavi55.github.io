@@ -1,0 +1,49 @@
+	/*NavBar Icon Positioning*/	
+	.navbar a {display: none;}
+	.navbar a.icon 
+	{
+		margin:0 36%;
+		font-size:30px;
+		display: block;
+	}
+
+	/*What happens on click*/
+  .navbar.resp
+  {
+     position:fixed;
+     height:17em;
+  }
+  .navbar.resp .icon 
+  {
+    /*position: absolute;*/
+    right: 0;
+    top: 0;
+  }
+  .navbar.resp a
+  {
+    position:relative;    
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  /****/
+  .box
+  {
+  	width:auto;
+  	float:none;
+  }
+  .page3 img
+  {
+  	height:auto;
+  	width:100%;
+  }
+  .caption a
+  {
+  	font-size:.65em;
+  }
+  .col2
+  {
+  	float:none;
+		margin-left:auto;
+		margin-right:auto;
+  }
