@@ -1,4 +1,5 @@
-	/*NavBar Icon Positioning*/	
+	/*NavBar Icon Positioning
+	Hide Font,,,Show hamburger*/	
 	.navbar a {display: none;}
 	.navbar a.icon 
 	{
@@ -11,7 +12,7 @@
   .navbar.resp
   {
      position:fixed;
-     height:17em;
+     height:18em;
   }
   .navbar.resp .icon 
   {
@@ -32,11 +33,19 @@
   	width:auto;
   	float:none;
   }
+  .page3 .content
+  {
+   grid-template-rows:repeat(1,2fr);
+  	grid-template-columns:repeat(1,3fr);
+  }
+  
+  /*
   .page3 img
   {
   	height:auto;
   	width:100%;
-  }
+  }*/
+  
   .caption a
   {
   	font-size:.65em;

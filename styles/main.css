@@ -76,6 +76,7 @@ h2
 
 .page3 .content
 {
+	/*
 	padding:2em 2em 2em 2em;
 	margin-left:5%;
 	margin-right:5%;
@@ -83,25 +84,42 @@ h2
 	border:3px solid black;
 	border-radius:5px;
 	overflow:hidden;
+	*/	
+	padding:1em;
+	margin-left:5%;
+	margin-right:5%;
+	border:3px solid black;
+	border-radius:5px;
+	
+	display:grid;
+	grid-template-columns:repeat(2,2fr);
+	grid-template-rows:repeat(3,6fr);
 }
 
+/*If smaller than...*/
+@media screen and (min-width:950px)
+{
+	.page3 .content
+	{
+		grid-template-rows:repeat(2,1fr);
+		grid-template-columns:repeat(3,2fr);
+	}
+}
 
 /******************/
 .box {
   position: relative;
   margin: 1em 1em;
+  /*
   float:left;
-  width:29.9%;
+  width:29.9%;*/
+  height:auto;
 }
 
 .box img{
 	height:auto;
 	width:100%;
 	border-radius:15px;
-}
-
-page3 img {
-  display: block;
 }
 
 .overlay {
@@ -161,90 +179,4 @@ input, textarea
     box-sizing: border-box;
     margin-bottom: 16px;
 }
-@media screen and (max-width: 950px) 
-{
-	.box 
-	{
-		width:44.5%;
-	}
-
-}
-/* 
-removed b/c of blocking CSS??? 
-helps website load faster
-...created a seperate file for mobiles
-*/
-
-/*
-@media screen and (max-width: 650px) 
-{
-	.navbar a {display: none;}
-	.navbar a.icon 
-	{
-		margin:0 36%;
-		font-size:30px;
-		display: block;
-	}
-}
-
-@media screen and (max-width: 650px) 
-{
-  .navbar.resp 
-  {
-     position:fixed;
-     height:17em;
-  }
-  .navbar.resp .icon 
-  {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.resp a
-  {
-    position:relative;    
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-  .box
-  {
-  	width:auto;
-  	float:none;
-  }
-  .page3 img
-  {
-  	height:auto;
-  	width:100%;
-  }
-  .caption a
-  {
-  	font-size:.65em;
-  }
-  
-  .overlay
-  {
-  	
-  }
-  .col2
-  {
-  	float:none;
-		margin-left:auto;
-		margin-right:auto;
-  }
-  
-}
-*/
-
-
-/*resp landscape*/
-/*
-@media screen and (max-height: 360px)
-{
-	.navbar.resp 
-	{
-     position:fixed;
-     height:85%;
-  }
-}
-*/
+/*Created mobile.css b/c of render blocking CSS*/
