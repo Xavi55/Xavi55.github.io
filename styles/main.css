@@ -1,6 +1,11 @@
+html
+{
+	scroll-behavior: smooth;
+	font-family: "Ubuntu", Helvetica, sans-serif;
+}
 main
 {
-	font-family: "Ubuntu", Helvetica, sans-serif;
+	
 }
 .navbar
 {
@@ -34,6 +39,7 @@ main
 {
 	font-size:1.2em;
 	font-weight:500;
+	margin: 0 auto;
 }
 h2
 {
@@ -44,36 +50,38 @@ h2
 }
 .page1
 {
-	background-image: url("../images/dark.jpg");
+	background-image: url("../images/giphy.gif");
 	/*PARALLAX SCROLLING*/
 	background-attachment:fixed;
 	background-position: center;
 	background-repeat:no-repeat;
-
+	background-size: cover;
 	color:white;
 	/*margin-left:15%;*/
 	padding-top:50px;
 	display:block;
-	height:600px;
+	height:100vh;
 
 }
 .page2
 {
 	color:#fff;
 	background-color:#000;
-	padding-top:35px;
+	padding: 2em 0;
+	border: white solid 1px;
 }
 .desc
 {
 	text-align:center;
 	padding: 0 30px 30px 30px;
-
 }
 .page3
 {
 	width:100%;
+	padding: 2em 0;
+	background-image: linear-gradient(black ,white, black);
+	color: white;
 }
-
 .page3 .content
 {
 	/*
@@ -86,9 +94,7 @@ h2
 	overflow:hidden;
 	*/	
 	padding:1em;
-	margin-left:5%;
-	margin-right:5%;
-	border:3px solid black;
+	/*border:3px solid black;/*
 	border-radius:5px;
 	
 	display:grid;
@@ -98,17 +104,18 @@ h2
 {
 	grid-column:1/-1;
 }
-/*If smaller than...*/
-@media screen and (min-width:950px)
+/*If bigger than...*/
+@media screen and (min-width:999px)
 {
+	.tex
+	{
+		margin: 0 25%;
+	}
 	.page3 .content
 	{
 		grid-template-rows:repeat(2,1fr);
-		grid-template-columns:repeat(3,2fr);
-	}
-	.content .box:last-child
-	{
-		grid-column:2/3;
+		grid-template-columns:repeat(2,2fr);
+		margin:0 20%;
 	}
 }
 /******************/
@@ -161,9 +168,6 @@ h2
 
 .page4
 {
-	margin-top:2em;
-	margin-left:auto;
-	margin-right:auto;
 	background-color:black;
 	color:white;
 	padding-top:35px;
