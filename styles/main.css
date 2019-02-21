@@ -92,10 +92,10 @@ h2
 	border:3px solid black;
 	border-radius:5px;
 	overflow:hidden;
-	*/	
+	border:3px solid black;
+	border-radius:5px;*/	
 	padding:1em;
-	/*border:3px solid black;/*
-	border-radius:5px;
+	
 	
 	display:grid;
 	grid-template-columns:repeat(2,2fr);
@@ -103,6 +103,29 @@ h2
 .content .box:last-child
 {
 	grid-column:1/-1;
+}
+.leftIcon
+{
+	position: absolute;
+	bottom:10%;
+	left:15%;
+	color:rgb(3, 148, 245);
+	transform: translateY(-10%);
+	transition: .5s;
+}
+.rightIcon
+{
+	position: absolute;
+	bottom:10%;
+	right:15%;
+	color: cyan;
+
+	transform: translateY(-10%);/*hover animations*/
+	transition: .5s;
+}
+.rightIcon:hover,.leftIcon:hover
+{
+	padding-bottom:5%;
 }
 /*If bigger than...*/
 @media screen and (min-width:999px)
@@ -152,12 +175,12 @@ h2
   opacity: .8;
 }
 
-.caption a {
+.caption {
 	text-decoration:none;
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
