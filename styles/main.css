@@ -100,7 +100,7 @@ h2
 	display:grid;
 	grid-template-columns:repeat(2,2fr);
 }
-.content .box:last-child
+.content .box:first-child
 {
 	grid-column:1/-1;
 }
