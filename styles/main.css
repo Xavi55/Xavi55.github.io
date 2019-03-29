@@ -3,9 +3,9 @@ html
 	scroll-behavior: smooth;
 	font-family: "Ubuntu", Helvetica, sans-serif;
 }
-main
+body
 {
-	
+	background-color:black;
 }
 .navbar
 {
@@ -61,7 +61,18 @@ h2
 	padding-top:50px;
 	display:block;
 	height:100vh;
+}
+.page1 h1
+{
+	padding: 90px 0 0 35px;
+	font-size: 5em;
 
+	/*for text outline/stroke effect*/
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 .page2
 {
@@ -98,7 +109,7 @@ h2
 	
 	
 	display:grid;
-	grid-template-columns:repeat(2,2fr);
+	grid-template-columns:repeat(2,1fr);
 }
 .content .box:first-child
 {
@@ -136,9 +147,11 @@ h2
 	}
 	.page3 .content
 	{
-		grid-template-rows:repeat(2,1fr);
-		grid-template-columns:repeat(2,2fr);
 		margin:0 20%;
+	}
+	.page4
+	{
+		margin: 0 10em;
 	}
 }
 /******************/
@@ -185,7 +198,7 @@ h2
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width:100%;
+  width:90%;
 }
 /******************/
 
